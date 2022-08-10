@@ -2,7 +2,7 @@
 
 Description:
 
-This is a web application that allows you to add or subtract from a total value and is respresented as an ATM machine that allows you to deposit and withdraw from a total account balance.
+This is a web application that allows you to add or subtract from a total value and is respresented as an ATM machine that allows you to deposit and withdraw from a total account balance. I have included changes in the styling from the initial starter files.
 
 How to Run:
 
