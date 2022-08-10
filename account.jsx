@@ -1,10 +1,10 @@
 const ATMDeposit = ({ onChange, isDeposit }) => {
-  const choice = ["Deposit", "Cash Back"];
+  const choice = ["Deposit", "Withdraw"];
   console.log(`ATM isDeposit: ${isDeposit}`);
   return (
     <label className="label huge">
       <h3> {choice[Number(!isDeposit)]}</h3>
-      <input type="number" width="200" onChange={onChange}></input>
+      <input type="number" width="200" onChange={onChange} placeholder="0"></input>
       <input type="submit" width="200" value="Submit"></input>
     </label>
   );
@@ -31,7 +31,7 @@ const Account = () => {
     <form onSubmit={handleSubmit}>
       <h2 id="total">{status}</h2>
       <button onClick={() => setIsDeposit(true)}>Deposit</button>
-      <button onClick={() => setIsDeposit(false)}>Cash Back</button>
+      <button onClick={() => setIsDeposit(false)}>Withdraw</button>
       <ATMDeposit onChange={handleChange} isDeposit={isDeposit}></ATMDeposit>
     </form>
   );
